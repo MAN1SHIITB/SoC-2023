@@ -73,10 +73,11 @@ Selection sort is a simple and efficient sorting algorithm that works by repeate
 The algorithm repeatedly selects the smallest (or largest) element from the unsorted portion of the list and swaps it with the first element of the unsorted part. This process is repeated for the remaining unsorted portion until the entire list is sorted. 
 ##### Time Complexity: The time complexity of Selection Sort is O(N^2) as there are two nested loops:
 <br>
-*  1. One loop to select an element of Array one by one = O(N)
-*  2. Another loop to compare that element with every other Array element = O(N)
-*  3. Therefore overall complexity = O(N) * O(N) = O(N*N) = O(N^2)
+1. One loop to select an element of Array one by one = O(N)<br>
+2. Another loop to compare that element with every other Array element = O(N)<br>
+3. Therefore overall complexity = O(N) * O(N) = O(N*N) = O(N^2)<br>
 <br>
+
 #### 2. Bubble Sort:
 Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
 <br>
@@ -86,11 +87,13 @@ In this way, the largest element is moved to the rightmost end at first. This pr
 <br>
 ##### Time Complexity: O(N^2)
 <br>
+
 #### 3. Merge Sort:
 Merge sort is defined as a sorting algorithm that works by dividing an array into smaller subarrays, sorting each subarray, and then merging the sorted subarrays back together to form the final sorted array.
 <br>
 In simple terms, we can say that the process of merge sort is to divide the array into two halves, sort each half, and then merge the sorted halves back together. This process is repeated until the entire array is sorted.
 <br>
+
 ##### Time Complexity: 
 O(N log(N)),  Sorting arrays on different machines. Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation. 
 T(n) = 2T(n/2) + θ(n)
@@ -126,23 +129,23 @@ Linear Search is defined as a sequential search algorithm that starts at one end
 <br>
 In Linear Search Algorithm, every element is considered as a potential match for the key and checked for the same. If any element is found equal to the key, the search is successful and the index of that element is returned. If no element is found equal to the key, the search yields “No match found”.
 ##### Time Complexity:
-*Best Case: In the best case, the key might be present at the first index. So the best case complexity is O(1)
-*Worst Case: In the worst case, the key might be present at the last index i.e., opposite to the end from which the search has started in the list. So the worst-case complexity is O(N) where N is the size of the list.
-*Average Case: O(N)
+1. Best Case: In the best case, the key might be present at the first index. So the best case complexity is O(1) <br>
+2. Worst Case: In the worst case, the key might be present at the last index i.e., opposite to the end from which the search has started in the list. So the worst-case complexity is O(N) where N is the size of the list. <br>
+3. Average Case: O(N)
 <br>
 #### Binary Search:
 Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N). 
 ##### To apply Binary Search algorithm:
-*The data structure must be sorted.
-*Access to any element of the data structure takes constant time.
+* The data structure must be sorted.
+* Access to any element of the data structure takes constant time.
 <br>
 In this algorithm, 
-*Divide the search space into two halves by finding the middle index “mid”. 
-*Compare the middle element of the search space with the key. 
-*If the key is found at middle element, the process is terminated.
-*If the key is not found at middle element, choose which half will be used as the next search space.
-*If the key is smaller than the middle element, then the left side is used for next search.
-*If the key is larger than the middle element, then the right side is used for next search.
+* Divide the search space into two halves by finding the middle index “mid”. 
+* Compare the middle element of the search space with the key. 
+* If the key is found at middle element, the process is terminated.
+* If the key is not found at middle element, choose which half will be used as the next search space.
+* If the key is smaller than the middle element, then the left side is used for next search.
+* If the key is larger than the middle element, then the right side is used for next search.
 <br>
 This process is continued until the key is found or the total search space is exhausted.
 <br>
@@ -177,9 +180,9 @@ The key process in quickSort is a partition(). The target of partitions is to pl
 
 #### 3. Binary Search Tree:
 Binary Search Tree is a node-based binary tree data structure which has the following properties:
-*The left subtree of a node contains only nodes with keys lesser than the node’s key.
-*The right subtree of a node contains only nodes with keys greater than the node’s key.
-*The left and right subtree each must also be a binary search tree.
+* The left subtree of a node contains only nodes with keys lesser than the node’s key.
+* The right subtree of a node contains only nodes with keys greater than the node’s key.
+* The left and right subtree each must also be a binary search tree.
 <br>
 Binary search trees are also efficacious in sortings and search algorithms. However, the search complexity of a BST depends upon the order in which the nodes are inserted and deleted; since in worst case, successive operations in the binary search tree may lead to degeneracy and form a singly linked list (or "unbalanced tree") like structure, thus has the same worst-case complexity as a linked list.
 <br>

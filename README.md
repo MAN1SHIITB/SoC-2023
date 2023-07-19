@@ -139,7 +139,7 @@ Binary Search is defined as a searching algorithm used in a sorted array by repe
 * The data structure must be sorted.
 * Access to any element of the data structure takes constant time.
 <br>
-In this algorithm, 
+In this algorithm, <br>
 * Divide the search space into two halves by finding the middle index “mid”. 
 * Compare the middle element of the search space with the key. 
 * If the key is found at middle element, the process is terminated.

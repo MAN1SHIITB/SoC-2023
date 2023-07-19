@@ -73,9 +73,9 @@ Selection sort is a simple and efficient sorting algorithm that works by repeate
 The algorithm repeatedly selects the smallest (or largest) element from the unsorted portion of the list and swaps it with the first element of the unsorted part. This process is repeated for the remaining unsorted portion until the entire list is sorted. 
 ##### Time Complexity: The time complexity of Selection Sort is O(N^2) as there are two nested loops:
 <br>
-* 1. One loop to select an element of Array one by one = O(N)
-* 2. Another loop to compare that element with every other Array element = O(N)
-* 3. Therefore overall complexity = O(N) * O(N) = O(N*N) = O(N^2)
+*  1. One loop to select an element of Array one by one = O(N)
+*  2. Another loop to compare that element with every other Array element = O(N)
+*  3. Therefore overall complexity = O(N) * O(N) = O(N*N) = O(N^2)
 <br>
 #### 2. Bubble Sort:
 Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.

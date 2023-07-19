@@ -132,8 +132,9 @@ In Linear Search Algorithm, every element is considered as a potential match for
 2. Worst Case: In the worst case, the key might be present at the last index i.e., opposite to the end from which the search has started in the list. So the worst-case complexity is O(N) where N is the size of the list. <br>
 3. Average Case: O(N)
 <br>
-#### Binary Search:
-Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N). 
+
+#### 2. Binary Search:
+Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N). <br>
 ##### To apply Binary Search algorithm:
 * The data structure must be sorted.
 * Access to any element of the data structure takes constant time.
@@ -148,6 +149,7 @@ In this algorithm,
 <br>
 This process is continued until the key is found or the total search space is exhausted.
 <br>
+
 #### 3. Interpolation Search:
 Given a sorted array of n uniformly distributed values arr[], write a function to search for a particular element x in the array. 
 Linear Search finds the element in O(n) time, Jump Search takes O(√ n) time and Binary Search takes O(log n) time. 

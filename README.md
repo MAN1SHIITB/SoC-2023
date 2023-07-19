@@ -55,7 +55,6 @@ A data structure is a storage that is used to store and organize data. It is a w
 7. List: Lists are sequence containers that allow non-contiguous memory allocation. As compared to the vector, the list has slow traversal, but once a position has been found, insertion and deletion are quick (constant time). Normally, when we say a List, we talk about a doubly linked list. For implementing a singly linked list, we use a forward_list.
 
 <br> 
-
 Yeah so this was all about Week 1. There were still more Data Structures, but the above are some of the important ones.
 
 <br>
@@ -103,9 +102,9 @@ The above recurrence can be solved either using the Recurrence Tree method or th
 #### 4. Insertion Sort:
 Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
 ##### Time Complexity of Insertion Sort:
-*The worst case time complexity of Insertion sort is O(N^2)
-*The average case time complexity of Insertion sort is O(N^2)
-*The time complexity of the best case is O(N).
+* The worst case time complexity of Insertion sort is O(N^2)
+* The average case time complexity of Insertion sort is O(N^2)
+* The time complexity of the best case is O(N).
 
 #### 5. Quick Sort:
 QuickSort is a sorting algorithm based on the Divide and Conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.

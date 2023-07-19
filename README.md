@@ -1,12 +1,14 @@
 # SoC-2023
 Heyal!
-This is a short doc on what I have learn in my Season Of Code-2023 (SoC-2023). Well I have jsut satrted learning DSA, also simultaneouly I have entered into compitetive programming. SoC helped me lot in this, all thanks to IIT Bombay WnCC Club.
+
+This is a short doc on what I have learn in my Season Of Code-2023 (SoC-2023). Well I have jsut satrted learning DSA, also simultaneouly I have entered into compitetive programming. SoC helped me lot in this, all thanks to IIT Bombay WnCC Club.<br>
+
 Well let's begin!
 
-Refrence to all the below is : https://awesome-sage-ee5.notion.site/Seasons-Of-Code-CP-1951186564c94c07b80c13181c4b161d 
+#### Refrence to all the below is : https://awesome-sage-ee5.notion.site/Seasons-Of-Code-CP-1951186564c94c07b80c13181c4b161d 
 
 
-Week 1:
+## Week 1:
 This week was the beggingn week and I was introduced to the following:
 1. Configuring VsCode in Windows 
 2. Basic Number theory 
@@ -18,8 +20,8 @@ In the Configuring VsCode in Windows part, I had downloaded VS Code for windows 
 - GCD and Euler’s theorem: https://crypto.stanford.edu/pbc/notes/numbertheory/euclid.html
 - Modular arithmetic: https://crypto.stanford.edu/pbc/notes/numbertheory/arith.html
 - Euler’s totient function: https://crypto.stanford.edu/pbc/notes/numbertheory/units.html
-
-Moving on to Bitwise Operators, i have learnt around 6 different types of bitwise operators:
+<br>
+Moving on to Bitwise Operators, I have learnt around 6 different types of bitwise operators:
 1. The & (bitwise AND) in C or C++ takes two numbers as operands and does AND on every bit of two numbers. The result of AND is 1 only if both bits are 1.  
 2. The | (bitwise OR) in C or C++ takes two numbers as operands and does OR on every bit of two numbers. The result of OR is 1 if any of the two bits is 1. 
 3. The ^ (bitwise XOR) in C or C++ takes two numbers as operands and does XOR on every bit of two numbers. The result of XOR is 1 if the two bits are different. 
@@ -27,19 +29,21 @@ Moving on to Bitwise Operators, i have learnt around 6 different types of bitwis
 5. The >> (right shift) in C or C++ takes two numbers, right shifts the bits of the first operand, and the second operand decides the number of places to shift. 
 6. The ~ (bitwise NOT) in C or C++ takes one number and inverts all bits of it.
 
-Time Comoplexity:
+<br>
+
+### Time Comoplexity:
 Instead of measuring actual time required in executing each statement in the code, Time Complexity considers how many times each statement executes. 
 Different Types:
-▪ A logarithmic algorithm – O(logn) : Runtime grows logarithmically in proportion to n. 
-▪ A linear algorithm – O(n)  : Runtime grows directly in proportion to n. 
-▪ A superlinear algorithm – O(nlogn)  : Runtime grows in proportion to n. 
-▪ A polynomial algorithm – O(n^c)  : Runtime grows quicker than previous all based on n. 
-▪ A exponential algorithm – O(c^n)  : Runtime grows even faster than polynomial algorithm based on n. 
-▪ A factorial algorithm – O(n!)  : Runtime grows the fastest and becomes quickly unusable for even small values of n.
-
-Data Structures:
+* A logarithmic algorithm – O(logn) : Runtime grows logarithmically in proportion to n. 
+* A linear algorithm – O(n)  : Runtime grows directly in proportion to n. 
+* A superlinear algorithm – O(nlogn)  : Runtime grows in proportion to n. 
+* A polynomial algorithm – O(n^c)  : Runtime grows quicker than previous all based on n. 
+* A exponential algorithm – O(c^n)  : Runtime grows even faster than polynomial algorithm based on n. 
+* A factorial algorithm – O(n!)  : Runtime grows the fastest and becomes quickly unusable for even small values of n.
+<br>
+### Data Structures:
 A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
-Popular types of Data Structures:
+#### Popular types of Data Structures:
 1. Satck: Stacks are a type of container adaptors with LIFO(Last In First Out) type of working, where a new element is added at one end (top) and an element is removed from that end only.  Stack uses an encapsulated object of either vector or deque (by default) or list (sequential container class) as its underlying container, providing a specific set of member functions to access its elements. 
 2. Queue: Queues are a type of container adaptors that operate in a first in first out (FIFO) type of arrangement. Elements are inserted at the back (end) and are deleted from the front. Queues use an encapsulated object of deque or list (sequential container class) as its underlying container, providing a specific set of member functions to access its elements.
 3. Priority Queue: A C++ priority queue is a type of container adapter, specifically designed such that the first element of the queue is either the greatest or the smallest of all elements in the queue, and elements are in non-increasing or non-decreasing order (hence we can see that each element of the queue has a priority {fixed order}).

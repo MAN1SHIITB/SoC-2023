@@ -135,7 +135,8 @@ In Linear Search Algorithm, every element is considered as a potential match for
 
 #### 2. Binary Search:
 Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N). <br>
-##### To apply Binary Search algorithm:
+##### To apply Binary Search algorithm: 
+<br>
 * The data structure must be sorted.
 * Access to any element of the data structure takes constant time.
 <br>

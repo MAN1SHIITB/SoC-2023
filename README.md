@@ -40,7 +40,9 @@ Different Types:
 * A polynomial algorithm – O(n^c)  : Runtime grows quicker than previous all based on n. 
 * A exponential algorithm – O(c^n)  : Runtime grows even faster than polynomial algorithm based on n. 
 * A factorial algorithm – O(n!)  : Runtime grows the fastest and becomes quickly unusable for even small values of n.
+
 <br>
+
 ### Data Structures:
 A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
 #### Popular types of Data Structures:
@@ -52,107 +54,132 @@ A data structure is a storage that is used to store and organize data. It is a w
 6. Vectors: Vectors are the same as dynamic arrays with the ability to resize itself automatically when an element is inserted or deleted, with their storage being handled automatically by the container. Vector elements are placed in contiguous storage so that they can be accessed and traversed using iterators. In vectors, data is inserted at the end. Inserting at the end takes differential time, as sometimes the array may need to be extended. Removing the last element takes only constant time because no resizing happens. Inserting and erasing at the beginning or in the middle is linear in time.
 7. List: Lists are sequence containers that allow non-contiguous memory allocation. As compared to the vector, the list has slow traversal, but once a position has been found, insertion and deletion are quick (constant time). Normally, when we say a List, we talk about a doubly linked list. For implementing a singly linked list, we use a forward_list.
 
+<br> 
 
 Yeah so this was all about Week 1. There were still more Data Structures, but the above are some of the important ones.
 
+<br>
 
-
-Week 2:
+## Week 2:
 Moving on to Week 2, in this week I was introduced to sorting, searching algorithms and divide and conquer techniques.
 
-Sorting Algorithms:
-A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.
-Selection sort, bubble sort, merge sort, insertion sort, quick sort and heap sort are some of the important algoritms
-
-1. Selection Sort:
+### Sorting Algorithms:
+A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure. 
+<br> Selection sort, bubble sort, merge sort, insertion sort, quick sort and heap sort are some of the important algoritms
+<br>
+#### 1. Selection Sort:
 Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element from the unsorted portion of the list and moving it to the sorted portion of the list. 
+<br>
 The algorithm repeatedly selects the smallest (or largest) element from the unsorted portion of the list and swaps it with the first element of the unsorted part. This process is repeated for the remaining unsorted portion until the entire list is sorted. 
-Time Complexity: The time complexity of Selection Sort is O(N^2) as there are two nested loops:
-1. One loop to select an element of Array one by one = O(N)
-2. Another loop to compare that element with every other Array element = O(N)
-3. Therefore overall complexity = O(N) * O(N) = O(N*N) = O(N^2)
-
-2. Bubble Sort:
+##### Time Complexity: The time complexity of Selection Sort is O(N^2) as there are two nested loops:
+<br>
+* 1. One loop to select an element of Array one by one = O(N)
+* 2. Another loop to compare that element with every other Array element = O(N)
+* 3. Therefore overall complexity = O(N) * O(N) = O(N*N) = O(N^2)
+<br>
+#### 2. Bubble Sort:
 Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
+<br>
 In this algorithm, traverse from left and compare adjacent elements and the higher one is placed at right side. 
+<br>
 In this way, the largest element is moved to the rightmost end at first. This process is then continued to find the second largest and place it and so on until the data is sorted.
-Time Complexity: O(N^2)
-
-3. Merge Sort:
+<br>
+##### Time Complexity: O(N^2)
+<br>
+#### 3. Merge Sort:
 Merge sort is defined as a sorting algorithm that works by dividing an array into smaller subarrays, sorting each subarray, and then merging the sorted subarrays back together to form the final sorted array.
+<br>
 In simple terms, we can say that the process of merge sort is to divide the array into two halves, sort each half, and then merge the sorted halves back together. This process is repeated until the entire array is sorted.
-Time Complexity: O(N log(N)),  Sorting arrays on different machines. Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation. 
+<br>
+##### Time Complexity: 
+O(N log(N)),  Sorting arrays on different machines. Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation. 
 T(n) = 2T(n/2) + θ(n)
+<br>
 The above recurrence can be solved either using the Recurrence Tree method or the Master method. It falls in case II of the Master Method and the solution of the recurrence is θ(Nlog(N)). The time complexity of Merge Sort isθ(Nlog(N)) in all 3 cases (worst, average, and best) as merge sort always divides the array into two halves and takes linear time to merge two halves.
-
-4. Insertion Sort:
+<br>
+#### 4. Insertion Sort:
 Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
-Time Complexity of Insertion Sort
-The worst case time complexity of Insertion sort is O(N^2)
-The average case time complexity of Insertion sort is O(N^2)
-The time complexity of the best case is O(N).
+##### Time Complexity of Insertion Sort:
+*The worst case time complexity of Insertion sort is O(N^2)
+*The average case time complexity of Insertion sort is O(N^2)
+*The time complexity of the best case is O(N).
 
-5. Quick Sort:
+#### 5. Quick Sort:
 QuickSort is a sorting algorithm based on the Divide and Conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.
+<br>
 The key process in quickSort is a partition(). The target of partitions is to place the pivot (any element can be chosen to be a pivot) at its correct position in the sorted array and put all smaller elements to the left of the pivot, and all greater elements to the right of the pivot. Partition is done recursively on each side of the pivot after the pivot is placed in its correct position and this finally sorts the array.
-
-6. Heap Sort:
+<br>
+#### 6. Heap Sort:
 Heap sort is a comparison-based sorting technique based on Binary Heap data structure. It is similar to the selection sort where we first find the minimum element and place the minimum element at the beginning. Repeat the same process for the remaining elements.
+<br>
 Heap sort is an in-place algorithm. Its typical implementation is not stable, but can be made stable. Typically 2-3 times slower than well-implemented QuickSort.  The reason for slowness is a lack of locality of reference.
+<br>
+<br>
 
-
-Searching Algorithms:
+### Searching Algorithms:
 Searching Algorithms are designed to check for an element or retrieve an element from any data structure where it is stored.
+<br>
 Some of the important ones are lsited below:
 
-1. Linear Search:
+#### 1. Linear Search:
 Linear Search is defined as a sequential search algorithm that starts at one end and goes through each element of a list until the desired element is found, otherwise the search continues till the end of the data set.
+<br>
 In Linear Search Algorithm, every element is considered as a potential match for the key and checked for the same. If any element is found equal to the key, the search is successful and the index of that element is returned. If no element is found equal to the key, the search yields “No match found”.
-Time Complexity:
-Best Case: In the best case, the key might be present at the first index. So the best case complexity is O(1)
-Worst Case: In the worst case, the key might be present at the last index i.e., opposite to the end from which the search has started in the list. So the worst-case complexity is O(N) where N is the size of the list.
-Average Case: O(N)
-
-Binary Search:
+##### Time Complexity:
+*Best Case: In the best case, the key might be present at the first index. So the best case complexity is O(1)
+*Worst Case: In the worst case, the key might be present at the last index i.e., opposite to the end from which the search has started in the list. So the worst-case complexity is O(N) where N is the size of the list.
+*Average Case: O(N)
+<br>
+#### Binary Search:
 Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N). 
-To apply Binary Search algorithm:
-The data structure must be sorted.
-Access to any element of the data structure takes constant time.
-
+##### To apply Binary Search algorithm:
+*The data structure must be sorted.
+*Access to any element of the data structure takes constant time.
+<br>
 In this algorithm, 
-Divide the search space into two halves by finding the middle index “mid”. 
-Compare the middle element of the search space with the key. 
-If the key is found at middle element, the process is terminated.
-If the key is not found at middle element, choose which half will be used as the next search space.
-If the key is smaller than the middle element, then the left side is used for next search.
-If the key is larger than the middle element, then the right side is used for next search.
+*Divide the search space into two halves by finding the middle index “mid”. 
+*Compare the middle element of the search space with the key. 
+*If the key is found at middle element, the process is terminated.
+*If the key is not found at middle element, choose which half will be used as the next search space.
+*If the key is smaller than the middle element, then the left side is used for next search.
+*If the key is larger than the middle element, then the right side is used for next search.
+<br>
 This process is continued until the key is found or the total search space is exhausted.
-
-3. Interpolation Search:
+<br>
+#### 3. Interpolation Search:
 Given a sorted array of n uniformly distributed values arr[], write a function to search for a particular element x in the array. 
 Linear Search finds the element in O(n) time, Jump Search takes O(√ n) time and Binary Search takes O(log n) time. 
+<br>
 The Interpolation Search is an improvement over Binary Search for instances, where the values in a sorted array are uniformly distributed. Interpolation constructs new data points within the range of a discrete set of known data points. Binary Search always goes to the middle element to check. On the other hand, interpolation search may go to different locations according to the value of the key being searched. For example, if the value of the key is closer to the last element, interpolation search is likely to start search toward the end side.
-Time Complexity: O(log2(log2 n)) for the average case, and O(n) for the worst case 
+##### Time Complexity: O(log2(log2 n)) for the average case, and O(n) for the worst case 
+<br>
+<br>
 
-
-Divide and Conquer Algorithms:
+### Divide and Conquer Algorithms:
 A divide-and-conquer algorithm recursively breaks down a problem into two or more sub-problems of the same or related type, until these become simple enough to be solved directly. The solutions to the sub-problems are then combined to give a solution to the original problem.
+<br>
 Some commonly used are:
-1. Merge Sort:
+<br>
+#### 1. Merge Sort:
 Merge sort is defined as a sorting algorithm that works by dividing an array into smaller subarrays, sorting each subarray, and then merging the sorted subarrays back together to form the final sorted array.
+<br>
 In simple terms, we can say that the process of merge sort is to divide the array into two halves, sort each half, and then merge the sorted halves back together. This process is repeated until the entire array is sorted.
 Time Complexity: O(N log(N)),  Sorting arrays on different machines. Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation. 
 T(n) = 2T(n/2) + θ(n)
+<br>
 The above recurrence can be solved either using the Recurrence Tree method or the Master method. It falls in case II of the Master Method and the solution of the recurrence is θ(Nlog(N)). The time complexity of Merge Sort isθ(Nlog(N)) in all 3 cases (worst, average, and best) as merge sort always divides the array into two halves and takes linear time to merge two halves.
-
-2. Quick Sort: 
+<br>
+#### 2. Quick Sort: 
 QuickSort is a sorting algorithm based on the Divide and Conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.
+<br>
 The key process in quickSort is a partition(). The target of partitions is to place the pivot (any element can be chosen to be a pivot) at its correct position in the sorted array and put all smaller elements to the left of the pivot, and all greater elements to the right of the pivot. Partition is done recursively on each side of the pivot after the pivot is placed in its correct position and this finally sorts the array.
+<br>
 
-3. Binary Search Tree:
+#### 3. Binary Search Tree:
 Binary Search Tree is a node-based binary tree data structure which has the following properties:
-The left subtree of a node contains only nodes with keys lesser than the node’s key.
-The right subtree of a node contains only nodes with keys greater than the node’s key.
-The left and right subtree each must also be a binary search tree.
-
+*The left subtree of a node contains only nodes with keys lesser than the node’s key.
+*The right subtree of a node contains only nodes with keys greater than the node’s key.
+*The left and right subtree each must also be a binary search tree.
+<br>
 Binary search trees are also efficacious in sortings and search algorithms. However, the search complexity of a BST depends upon the order in which the nodes are inserted and deleted; since in worst case, successive operations in the binary search tree may lead to degeneracy and form a singly linked list (or "unbalanced tree") like structure, thus has the same worst-case complexity as a linked list.
+<br>

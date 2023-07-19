@@ -140,11 +140,11 @@ Binary Search is defined as a searching algorithm used in a sorted array by repe
 2.  Access to any element of the data structure takes constant time.
 <br>
 In this algorithm, <br>
-- Divide the search space into two halves by finding the middle index “mid”. 
-- Compare the middle element of the search space with the key. 
-- If the key is found at middle element, the process is terminated.
-- If the key is not found at middle element, choose which half will be used as the next search space.
-- If the key is smaller than the middle element, then the left side is used for next search.
+- Divide the search space into two halves by finding the middle index “mid”. <br>
+- Compare the middle element of the search space with the key. <br> 
+- If the key is found at middle element, the process is terminated. <br>
+- If the key is not found at middle element, choose which half will be used as the next search space.<br>
+- If the key is smaller than the middle element, then the left side is used for next search.<br>
 - If the key is larger than the middle element, then the right side is used for next search.<br>
 This process is continued until the key is found or the total search space is exhausted.
 <br>
